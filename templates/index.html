@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    The main page
+{% endblock %}
+{% block body %}
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+
+  <main role="main" class="inner cover">
+      <h1 class="cover-heading">Welcome to RomanCoo – A Hub for Thoughtful Writing and Creative Expression</h1>
+      <p class="lead">At RomanCoo, we believe in the power of words to inspire, inform, and ignite conversations. Our platform is dedicated to helping creators, writers, and thinkers share their unique perspectives with the world. Whether you're passionate about technology, culture, or any topic that sparks curiosity, RomanCoo is the perfect space to craft and publish your articles.
+
+        Start writing, share your voice, and become part of a community where ideas thrive!</p>
+      <p class="lead">
+          <a href="/create-article" class="btn btn-lg btn-secondary">Crete article</a>
+      </p>
+  </main>
+  <section class="features mt-5 bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Our Features</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <img src="{{ url_for('static', filename='images/article_creation.png') }}" alt="Easy Article Creation" class="feature-icon mb-3">
+                    <h3>Easy Article Creation</h3>
+                    <p>Craft articles effortlessly with our intuitive editor. Whether you're a beginner or a seasoned writer, you'll find it easy to bring your ideas to life.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <img src="{{ url_for('static', filename='images/formatting.png') }}" alt="Rich Formatting Options" class="feature-icon mb-3">
+                    <h3>Rich Formatting Options</h3>
+                    <p>Enhance your articles with a variety of formatting tools. Add images, videos, and links to make your content more engaging and visually appealing.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <img src="{{ url_for('static', filename='images/optimization.png') }}" alt="SEO Optimization" class="feature-icon mb-3">
+                    <h3>SEO Optimization</h3>
+                    <p>Optimize your articles for search engines with built-in SEO tools. Increase your visibility and reach a wider audience with ease.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="testimonials mt-5">
+    <div class="container">
+        <h2 class="text-center mb-4">What Our Users Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card text-center p-3 border rounded">
+                    <img src="{{ url_for('static', filename='images/user_1.png') }}" alt="User 1" class="rounded-circle mb-2" width="80">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"This website has changed my life!"</p>
+                        <footer class="blockquote-footer mt-2">Happy User</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card text-center p-3 border rounded">
+                    <img src="{{ url_for('static', filename='images/user_2.png') }}" alt="User 2" class="rounded-circle mb-2" width="80">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"I found exactly what I needed!"</p>
+                        <footer class="blockquote-footer mt-2">Satisfied Customer</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card text-center p-3 border rounded">
+                    <img src="{{ url_for('static', filename='images/user_3.png') }}" alt="User 3" class="rounded-circle mb-2" width="80">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Amazing experience and great support!"</p>
+                        <footer class="blockquote-footer mt-2">Loyal User</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+</div>
+
+
+
+{% endblock %}

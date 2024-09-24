@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Search Results for "{{ query }}"
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Search Results for "{{ query }}"</h1>
+
+        <form action="{{ url_for('search') }}" method="GET" class="alert alert-info">
+            <div class="input-group">
+                <input type="text" name="article_name" class="form-control" placeholder="Search for articles..." required>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+        {% if articles|length > 0 %}
+            {% for el in articles %}
+                <div class="alert alert-info">
+                    <h2>{{ el.title }}</h2>
+                    <p>{{ el.intro }}</p>
+                    <p><b>Date: {{ el.date.strftime('%Y-%m-%d') }}</b></p>
+                    <a href="/posts/{{ el.id }}" class="btn btn-warning">Details</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No articles found for your search.</p>
+        {% endif %}
+
+        <a href="{{ url_for('posts') }}" class="btn btn-secondary mt-3">Back to All Posts</a>
+    </div>
+{% endblock %}

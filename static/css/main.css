@@ -1,0 +1,170 @@
+body {
+    padding-left: 20px; /* Відступ зліва для всього тексту */
+}
+
+.text {
+    margin-left: 20px; /* Додатковий відступ для класу тексту */
+}
+
+.intro-text {
+    font-size: 1.2em; /* Adjust font size */
+    color: #555; /* Change text color */
+    margin-bottom: 20px; /* Add space below intro */
+    font-style: italic; /* Italicize the intro text */
+    border-left: 3px solid #007bff; /* Optional: Add a left border for emphasis */
+    padding-left: 15px; /* Space between the border and text */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+   
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+}
+
+
+
+body, html {
+    margin: 0; /* Remove default margin from body */
+    padding: 0; /* Remove default padding from body */
+  }
+  
+  footer {
+    background-color: #343a40; /* Set your footer color */
+    padding: 20px 0; /* Adjust padding for spacing */
+    margin: 0; /* Ensure no margin is applied to the footer */
+  }
+  
+  .container {
+    padding-left: 0; /* Remove left padding from container */
+    padding-right: 0; /* Remove right padding from container */
+    width: 100%; /* Ensure the container spans the full width */
+  }
+  
+  .text-white {
+    color: white; /* Ensure text is readable */
+  }
+
+  
+  .features {
+    background-color: #f8f9fa; /* Light background */
+}
+
+.feature-box {
+    padding: 20px;
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.feature-icon {
+    width: 50px; /* Adjust icon size */
+    height: auto;
+}
+
+
+.testimonials {
+    background-color: #f8f9fa; /* Light gray background for the section */
+    padding: 40px 0; /* Top and bottom padding */
+}
+
+.row {
+    display: flex; /* Use flexbox for equal height */
+    justify-content: space-between; /* Space between cards */
+}
+
+.testimonial-card {
+    background-color: #ffffff; /* White background for testimonial cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for the cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+    padding: 20px; /* Padding inside the card */
+    flex: 1; /* Allow cards to grow equally */
+    margin: 10px; /* Space between cards */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.testimonial-card img {
+    border: 3px solid #007bff; /* Blue border around user images */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+blockquote {
+    font-style: italic; /* Italic text for blockquotes */
+    color: #343a40; /* Dark text color for quotes */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+    padding: 10px; /* Padding inside blockquote */
+    border-radius: 5px; /* Rounded corners for blockquote */
+}
+
+.blockquote-footer {
+    font-size: 0.9em; /* Slightly smaller font for the footer */
+    color: #007bff; /* Change name color to blue for emphasis */
+    margin-top: 10px; /* Space above footer */
+    font-weight: bold; /* Make the name bold */
+}
+
+h2 {
+    color: #007bff; /* Blue color for the section heading */
+    margin-bottom: 30px; /* Space below heading */
+}
+
+.but{
+    margin-bottom: 50px;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.container-mt-5{
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
