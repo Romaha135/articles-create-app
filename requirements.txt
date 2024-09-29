@@ -11,3 +11,4 @@ pip==24.2
 SQLAlchemy==2.0.35
 typing_extensions==4.12.2
 Werkzeug==3.0.4
+gunicorn==23.0.0
